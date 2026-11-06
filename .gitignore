@@ -38,5 +38,5 @@ override.tf.json
 terraform.rc
 
 # Archivos temporales o de respaldo locales
-*.ignore
+# *.ignore
 *.bak
