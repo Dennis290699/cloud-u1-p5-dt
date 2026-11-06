@@ -1,0 +1,42 @@
+# ====================================================================
+# Reglas de Git para Terraform (.gitignore)
+# ====================================================================
+
+# Archivos y carpetas generados por 'terraform init' (proveedores y plugins binarios)
+.terraform/
+**/.terraform/*
+
+# Archivo de bloqueo de dependencias:
+# Nota: HashiCorp recomienda versionar '.terraform.lock.hcl' para fijar versiones de los providers.
+# Si en tu caso tampoco deseas subirlo, descomenta la siguiente línea:
+# .terraform.lock.hcl
+
+# Archivos de estado (State files) - ¡Contienen infraestructura y posibles secretos!
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Archivos de variables con posibles credenciales o secretos
+*.tfvars
+*.tfvars.json
+
+# Archivos de plan generados
+*.tfplan*
+
+# Logs de error y depuración
+crash.log
+crash.*.log
+
+# Archivos override locales
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Configuración del CLI de Terraform
+.terraformrc
+terraform.rc
+
+# Archivos temporales o de respaldo locales
+*.ignore
+*.bak
