@@ -26,5 +26,5 @@ variable "nombre_llave" {
 variable "cantidad_instancias" {
   description = "Cantidad de instancias"
   type        = number
-  default     = "2"
+  default     = 2
 }
