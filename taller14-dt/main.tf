@@ -5,14 +5,14 @@ provider "aws" {
 
 # Crear grupos de seguridad para instancias
 resource "aws_security_group" "mi-sg-instancias-terraform_14" {
-  name        = "mi-security-group-instancias-terraform"
+  name        = "mi-security-group-instancias-terraform-14"
   description = "Prueba desde terraform"
   vpc_id      = "vpc-0666445141ab6fc0e"
 }
 
 # Crear grupos de seguridad para EFS
 resource "aws_security_group" "mi-sg-efs-terraform_14" {
-  name        = "mi-security-group-efs-terraform"
+  name        = "mi-security-group-efs-terraform-14"
   description = "Prueba desde terraform"
   vpc_id      = "vpc-0666445141ab6fc0e"
 }
